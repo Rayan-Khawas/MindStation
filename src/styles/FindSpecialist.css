@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.findSpecialist {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 64px 48px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.findContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.findHero h1 {
+  margin: 0 0 12px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #34483a;
+}
+
+.findHero p {
+  margin: 0 0 40px;
+  font-size: 15px;
+  color: #243a2b;
+}
+
+/* Section titles */
+.findSpecialties h2,
+.findGroup h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  color: #34483a;
+}
+
+/* Specialty cards */
+.findSpecialties {
+  margin-bottom: 56px;
+}
+
+.findSpecialtyCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.findSpecialtyCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  text-align: left;
+  font-family: inherit;
+  background-color: #ffffff;
+  border: 2px solid #e3eae2;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.findSpecialtyCard:hover {
+  border-color: #39834a;
+  transform: translateY(-4px);
+}
+
+.findSpecialtyCard h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #243a2b;
+}
+
+.findSpecialtyCard p {
+  margin: 0;
+  font-size: 13px;
+  color: #66736a;
+}
+
+.findSpecialtyCard span {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #39834a;
+}
+
+/* Doctor lists */
+.findGroup {
+  margin-bottom: 48px;
+  scroll-margin-top: 24px;
+}
+
+.findRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border: 2px solid #e3eae2;
+  border-radius: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.findRow:hover {
+  border-color: #39834a;
+}
+
+.findRowInfo h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  color: #243a2b;
+}
+
+.findRowInfo p {
+  margin: 0;
+  font-size: 13px;
+  color: #66736a;
+}
+
+/* Button */
+.findBtnOutline {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  border: 1px solid #34483a;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #34483a;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.findBtnOutline:hover {
+  background-color: #34483a;
+  color: #ffffff;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .findSpecialist {
+    padding: 40px 24px;
+  }
+
+  .findSpecialtyCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .findSpecialist {
+    padding: 32px 16px;
+  }
+
+  .findHero h1 {
+    font-size: 30px;
+  }
+
+  .findRow {
+    padding: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .findSpecialtyCard,
+  .findRow,
+  .findBtnOutline {
+    transition: none;
+  }
+}

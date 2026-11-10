@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.home {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 64px 48px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.homeContainer {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.homeHero h1 {
+  margin: 0 0 16px;
+  font-size: 44px;
+  font-weight: 700;
+  color: #34483a;
+}
+
+.homeHero p {
+  margin: 0 0 28px;
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #243a2b;
+}
+
+/* Buttons */
+.homeButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.homeBtnFilled,
+.homeBtnOutline {
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.homeBtnFilled {
+  background-color: #34483a;
+  color: #ffffff;
+  border: 1px solid #34483a;
+}
+
+.homeBtnFilled:hover {
+  background-color: #39834a;
+  border-color: #39834a;
+}
+
+.homeBtnOutline {
+  background-color: transparent;
+  color: #34483a;
+  border: 1px solid #34483a;
+}
+
+.homeBtnOutline:hover {
+  background-color: #34483a;
+  color: #ffffff;
+}
+
+/* Cards */
+.homeCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.homeCard {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: #ffffff;
+  border: 2px solid #e3eae2;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+ 
+}
+
+.homeCardImage {
+  display: block;
+  width: 100%;
+  height: 350px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.homeCard:hover {
+  border-color:#39834a ;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(36, 58, 43, 0.12);
+}
+
+
+
+.homeCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+}
+
+.homeCardText h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #243a2b;
+}
+
+.homeCardText span {
+  font-size: 13px;
+  color: #39834a;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .home {
+    padding: 40px 24px;
+  }
+
+  .homeHero h1 {
+    font-size: 34px;
+  }
+
+  .homeCards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .home {
+    padding: 32px 16px;
+  }
+
+  .homeHero h1 {
+    font-size: 28px;
+  }
+
+  .homeCards {
+    gap: 12px;
+  }
+
+  .homeCardImage {
+    height: 120px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .homeCard,
+  .homeBtnFilled,
+  .homeBtnOutline {
+    transition: none;
+  }
+}
