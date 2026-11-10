@@ -12,8 +12,8 @@ import WorkshopsEvents from './pages/WorkshopsEvents';
 import WorkshopRegister from './pages/WorkshopRegister';
 import SignUp from './pages/SignUp';
 
-import AboutUs from './CompanyInfo/AboutUs';
-import Contact from './CompanyInfo/Contact';
+// import AboutUs from './CompanyInfo/AboutUs';
+// import Contact from './CompanyInfo/Contact';
 // import PrivacyPolicy from './CompanyInfo/PrivacyPolicy';
 
 const App = () => {
