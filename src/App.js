@@ -14,7 +14,7 @@ import SignUp from './pages/SignUp';
 
 import AboutUs from './CompanyInfo/AboutUs';
 import Contact from './CompanyInfo/Contact';
-import PrivacyPolicy from './CompanyInfo/PrivacyPolicy';
+// import PrivacyPolicy from './CompanyInfo/PrivacyPolicy';
 
 const App = () => {
   return (
@@ -46,9 +46,9 @@ const App = () => {
           />
           <Route path="/sign-up" element={<SignUp />} />
 
-          <Route path="/about" element={<AboutUs />} />
+          {/* <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
         </Routes>
 
         <Footer />
